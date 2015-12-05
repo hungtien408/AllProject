@@ -1,0 +1,256 @@
+﻿body
+{
+    background: #e0e0e0;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+.clr
+{
+    clear: both;
+}
+h1, h2, h3, h4, h5, h6
+{
+    margin: 0;
+}
+hr
+{
+    border: none;
+    margin: 0;
+}
+a:link, a:visited
+{
+    outline: none;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+fieldset, a img, img
+{
+    border: none;
+}
+:focus
+{
+    outline: none;
+}
+.hidden
+{
+    display: none;
+}
+.backstretch img
+{
+    top: 0 !important;
+}
+/*=======================*/
+#wrappertop
+{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+#header
+{
+    margin: 10px auto 0;
+    overflow: hidden;
+    width: 740px;
+}
+#logo
+{
+    float: left;
+    width: 71px;
+}
+#logo a
+{
+    display: block;
+}
+#nameco
+{
+    overflow: hidden;
+    padding-left: 25px;
+    vertical-align: middle;
+}
+#nameco span
+{
+    display: table-cell;
+    vertical-align: middle;
+    height: 71px;
+}
+#nameco img
+{
+    display: inline-block;
+    width: 100%;
+}
+/*===============================*/
+#main-content
+{
+    padding-top: 75px;
+    width: 100%;
+}
+.wrap-boximg
+{
+    text-align: center;
+    width: 100%;
+}
+.wrap-boximg .box-col
+{
+    float: left;
+    width: 20%;
+}
+.wrap-images
+{
+    overflow: hidden;
+    width: 100%;
+}
+.box-in
+{
+    padding: 30px;
+}
+.intro-img
+{
+    display: block;
+    width: 100%;
+}
+.intro-img img
+{
+    background: none;
+    display: inline-block;
+}
+.name-link a
+{
+    color: #000;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.wrap-images:hover a, .wrap-images a:hover
+{
+    color: #e52f3c;
+    text-decoration: none;
+}
+.wellcom
+{
+    text-align: center;
+    padding: 45px 0;
+    width: 100%;
+}
+.wellcom img
+{
+    display: inline-block;
+    max-width: 100%;
+}
+#footer
+{
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    z-index: 2;
+}
+#footer, #footer a
+{
+    color: #5f5e5e;
+    font-size: 11px;
+    line-height: 16px;
+}
+#languge a
+{
+    display: inline-block;
+    margin: 0 2px;
+}
+#footer .copyright
+{
+    padding: 6px 0;
+}
+@media (min-width: 981px) and (max-width: 1199px)
+{
+    .box-in
+    {
+        padding: 30px 15px;
+    }
+}
+@media (max-width: 980px)
+{
+    .box-in
+    {
+        padding: 20px 10px;
+    }
+    #main-content
+    {
+        padding-top: 30px;
+    }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 980px)
+{ 
+    .wrap-boximg .box-col
+    {
+        width: 33.333%;
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)
+{
+    #header
+    {
+        width : 100%;
+    }
+    .wellcom
+    {
+        padding: 20px 0;
+    }
+    #main-content
+    {
+        padding-top: 10px;
+    }
+    #footer
+    {
+        padding: 15px 0;
+    }
+}
+@media (min-width: 640px) and (max-width: 767px)
+{
+    .wrap-boximg .box-col
+    {
+        width: 33.333%;
+    }
+}
+@media (max-width: 639px)
+{
+    .wrap-boximg .box-col
+    {
+        width: 50%;
+    }
+}
+@media (max-width: 480px)
+{
+    #logo
+    {
+        float: none;
+        margin: 0 auto;
+    } 
+    #nameco
+    {
+        padding: 10px 0;
+        width: 100%;
+    }
+     #nameco span
+     {
+         display: block;
+         height: auto;
+     }
+    #main-content
+    {
+        padding-top: 0;
+    }
+}
+@media (max-width: 420px)
+{
+    .wrap-boximg .box-col
+    {
+        width: 100%;
+    }
+}

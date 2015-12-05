@@ -1,0 +1,626 @@
+﻿*
+{
+    font-family: Arial;
+    margin-bottom: 0px;
+}
+body
+{
+    font-size: 10pt;
+}
+img
+{
+    border: 0;
+}
+a, a:link
+{
+    color: #4f81bd;
+    text-decoration: none;
+}
+#wrapper
+{
+}
+#header
+{
+    background-color: #4f81bd;
+    border: 3px solid #385d8a;
+    height: 115px;
+}
+#logo
+{
+    margin: 7px 7px 7px 30px;
+}
+#menu
+{
+    background-color: #4f81bd;
+    border: 3px solid #385d8a;
+    padding-left: 10px;
+}
+
+#menu a
+{
+    color: white;
+}
+
+#menu a:hover
+{
+    color: Blue;
+}
+
+#menu a.active
+{
+    color: blue;
+    font-weight: bold;
+}
+
+.loginStatus
+{
+    float: right;
+    color: White;
+    padding: 0px 10px;
+}
+
+#center
+{
+    padding: 20px 0 20px 0;
+}
+#footer
+{
+}
+
+.button
+{
+    background-color: #4f81bd;
+    border: 2px solid #385d8a;
+    padding: 5px;
+    color: White;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover
+{
+    background-color: White;
+    border: 2px solid #4f81bd;
+    color: #4f81bd;
+}
+
+.textbox
+{
+    border: 1px solid #4f81bd;
+}
+
+.gridview
+{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #385d8a;
+}
+.gridview th
+{
+    background-color: #4f81bd;
+    color: #fff;
+    padding: 5px;
+    border: 0;
+    text-align: left;
+}
+.gridview th a
+{
+    color: #fff;
+}
+.gridview th a:hover
+{
+    text-decoration: underline;
+}
+.gridview td
+{
+    color: #333;
+    padding: 2px 5px 2px 5px;
+    text-align: left;
+    font-family: Arial;
+}
+
+.gridview tr:hover
+{
+    background-color: #e7f1fd;
+}
+
+.gridviewpager td
+{
+    padding: 5px 2px 5px 2px;
+}
+
+.gridviewpager a
+{
+    border: 1px solid #385d8a;
+    background-color: #4f81bd;
+    color: #fff;
+    padding: 0 4px 0 4px;
+    margin: 0;
+}
+
+.gridviewpager a:hover, .gridviewpager span
+{
+    background-color: White;
+    border: 1px solid #4f81bd;
+    color: #4f81bd;
+    padding: 0 4px 0 4px;
+}
+.border-right
+{
+    border-right: 1px solid #e0e0e0;
+}
+.title
+{
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    background-color: #4f81bd;
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.des
+{
+    color: #4f81bd;
+}
+.require
+{
+    color: Red;
+}
+
+.mInfo
+{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+.searchTitle
+{
+    background-image: url('../images/info.gif');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 30px;
+    margin: 0;
+}
+.search
+{
+    border-collapse: collapse;
+}
+table.search td
+{
+    padding-bottom: 5px;
+}
+table.search td.left
+{
+    color: #4f81bd;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.dropdownlist
+{
+    border: 1px solid #4f81bd;
+}
+
+.watermarked
+{
+    color: #ccc;
+    border: 1px solid #4f81bd;
+}
+
+.clear
+{
+    clear: both;
+}
+
+/* FORM LOGIN   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 2px solid #4f81bd;
+    color: #4f81bd;
+}
+
+fieldset p
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline
+{
+    display: inline;
+}
+
+legend
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+    color: #4f81bd;
+}
+
+input.textEntry
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 376px;
+    background-color: #FFF;
+    margin: 0 auto;
+}
+.failureNotification
+{
+    color: Red;
+}
+.submitButton
+{
+    float: right;
+}
+
+/* Browse Applicants   
+----------------------------------------------------------*/
+
+.browseapplicants
+{
+    border-collapse: collapse;
+}
+
+.browseapplicants td.title
+{
+    padding: 5px 20px 5px 10px;
+    text-align: left;
+    vertical-align: middle;
+    background-color: #4f81bd;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.browseapplicants td
+{
+    padding: 0 10px 0 10px;
+}
+.browseapplicants td.left
+{
+    background-color: #eeece1;
+    padding: 5px 20px 5px 20px;
+    min-width: 150px;
+    font-weight: bold;
+    color: #4f81bd;
+    font-size: 9pt;
+}
+
+.browseapplicants td.leftnbg
+{
+    padding: 10px 20px 10px 20px;
+}
+
+/* Enroll Applicants   
+----------------------------------------------------------*/
+.enrollapplicants
+{
+    color: #4f81bd;
+    font-weight: bold;
+    font-size: 9pt;
+}
+
+.enrollapplicants td
+{
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+.enrollapplicants input
+{
+    border: 0;
+    border-bottom: 1px dotted #4f81bd;
+    color: #000;
+    font-weight: normal;
+}
+
+
+/* Combobox
+----------------------------------------------------------*/
+
+.normalcombobox td
+{
+    padding: 0;
+}
+.normalcombobox .ajax__combobox_textboxcontainer
+{
+    border: 1px solid #385d8a;
+    height: 20px;
+}
+.normalcombobox .ajax__combobox_textboxcontainer input
+{
+    border: 0;
+    padding-left: 5px;
+}
+.normalcombobox .ajax__combobox_buttoncontainer
+{
+    border: 1px solid #385d8a;
+}
+.normalcombobox .ajax__combobox_buttoncontainer button
+{
+    border: 0;
+    background: url('../images/WebResource.axd.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.normalcombobox .ajax__combobox_buttoncontainer button:hover
+{
+    background-color: #e3f0ff;
+}
+.normalcombobox .ajax__combobox_itemlist
+{
+}
+
+.textcombobox td
+{
+    padding: 0;
+}
+.textcombobox .ajax__combobox_textboxcontainer
+{
+    border: 0;
+    border-bottom: 1px dotted #4f81bd;
+}
+.textcombobox .ajax__combobox_textboxcontainer input
+{
+    border: 0;
+    padding-left: 5px;
+}
+.textcombobox .ajax__combobox_buttoncontainer
+{
+    border: 1px solid #4f81bd;
+}
+.textcombobox .ajax__combobox_buttoncontainer button
+{
+    border: 0;
+    background: url('../images/WebResource.axd.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.textcombobox .ajax__combobox_buttoncontainer button:hover
+{
+    background-color: #e3f0ff;
+}
+.textcombobox .ajax__combobox_itemlist
+{
+}
+
+
+/* Validation Popup
+----------------------------------------------------------*/
+
+.ErrorFieldHighlight
+{
+    border: 1px solid red;
+}
+
+.ajax__validatorcallout_callout_cell td
+{
+    padding: 0;
+    margin: 0;
+    background: none;
+    color: Red;
+}
+
+.ajax__validatorcallout_error_message_cell
+{
+    color: Red;
+}
+
+.ajax__validatorcallout_callout_cell
+{
+    padding: 0 !important;
+}
+
+/* Checkbox List
+----------------------------------------------------------*/
+.checkboxlist
+{
+    margin-left: 30px;
+}
+.checkboxlist td
+{
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+}
+
+/* View Applicant
+----------------------------------------------------------*/
+.stdinfo
+{
+    vertical-align: middle;
+    font-weight: bold;
+    color: #222;
+}
+.stdinfo *
+{
+    vertical-align: middle;
+}
+.view-applicant
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+.view-applicant tr
+{
+    border-bottom: 1px solid #eee;
+}
+.view-applicant td
+{
+    padding-left: 20px;
+}
+
+.view-applicant th
+{
+    text-align: left;
+}
+
+.view-applicant .head
+{
+    background-color: #4f81bd;
+    color: #FFF;
+    border-bottom: 2px solid #d0d0d0;
+    padding: 10px 10px 10px 6px;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-top: 15px;
+}
+
+.view-applicant .left
+{
+    width: 150px;
+    min-width: 150px;
+    background-color: #f9f9f9;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    color: #555;
+    font-size: 9pt;
+}
+
+.ajax__calendar_container td
+{
+    border: 0;
+}
+
+.ajax__tab_header
+{
+    float: left;
+    font-weight: bold;
+    font-size: 10pt !important;
+    color: #4f81bd !important;
+}
+.ajax__tab_body
+{
+    /*float:<span class='val'>left</span>;*/
+    margin-left: 220px;
+}
+.ajax__tab_outer
+{
+    display: block !important;
+    background: none !important;
+    background-color: #fff !important;
+    border: 1px solid #4f81bd !important;
+    margin-bottom: 1px !important;
+    height: auto !important;
+}
+.ajax__tab_inner
+{
+    background: none !important;
+}
+.ajax__tab_tab
+{
+    /*min-width:<span class='val'><span class='unit'>200</span>px</span>;*/
+    width: 200px;
+    height: auto !important;
+    background: none !important;
+    text-align: left !important;
+}
+.ajax__tab_active .ajax__tab_outer
+{
+    background-color: #4f81bd !important;
+    color: #fff !important;
+}
+
+.ajax__tab_body
+{
+    border: 0 !important;
+    padding: 0 0 0 10px !important;
+}
+
+/* Product Album Box
+----------------------------------------------------------*/
+
+.album
+{
+    float: left;
+    width: 120px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.album .tit
+{
+    color: #4f81bd;
+    display: block;
+    width: 120px;
+}
+.album .description
+{
+    font-size: 8pt;
+    color: #666;
+}
+/* DataPager
+----------------------------------------------------------*/
+
+.current_page_label
+{
+    background-color: White;
+    border: 1px solid #4f81bd;
+    color: #4f81bd;
+    padding: 0 4px 0 4px;
+}
+.numeric_link, .numeric_link:link
+{
+    border: 1px solid #385d8a;
+    background-color: #4f81bd;
+    color: #fff;
+    padding: 0 4px 0 4px;
+    margin: 0;
+}
+.numeric_link:hover
+{
+    background-color: White;
+    border: 1px solid #4f81bd;
+    color: #4f81bd;
+    padding: 0 4px 0 4px;
+}
+/* Upload */
+
+.insert_video_button
+{
+    background:none;
+    border:0;
+    background-position: left top;
+    width: 80px;
+    height: 22px;
+    background-image: url('../images/choose_video.gif');
+    background-repeat: no-repeat;
+}
+.insert_image_button
+{
+    background:none;
+    border:0;
+    background-position: left top;
+    width: 80px;
+    height: 22px;
+    background-image: url('../images/choose_image.gif');
+    background-repeat: no-repeat;
+}
+.cancel_button
+{
+    background:none;
+    border:0;
+    background-position: left top;
+    width: 58px;
+    height: 22px;
+    background-image: url('../images/cancel.gif');
+    background-repeat: no-repeat;
+}
