@@ -1,0 +1,281 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    }
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+
+/*========================*/
+.gallery-slider
+{
+    margin: 0 auto;
+    width: 855px;
+}
+.slider-for
+{
+    border: solid 1px #000;
+}
+.slider-big, .slider-big .gallery-img
+{
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.slider-big .gallery-text
+{
+    background: url(../images/op-bg2.png) repeat left top;
+    bottom: 0;
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.gallery-text .text-in
+{
+    padding: 10px;
+}
+.slider-for .slick-prev, .slider-for .slick-next
+{
+    background: url(../images/control3.png) no-repeat left top;
+    border: none;
+    display: block !important;
+    top: 50%;
+    position: absolute;
+    margin-top: -22px;
+    overflow: hidden;
+    text-indent: -999em;
+    height: 51px;
+    width: 38px;
+}
+.slider-for .slick-prev
+{
+    left: 0;
+}
+.slider-for .slick-next
+{
+    right: 0;
+}
+
+.slider-for .slick-prev, .slider-for .slick-next
+{
+	opacity:0;
+	filter:alpha(opacity=0); 
+}
+.slider-for:hover .slick-prev, .slider-for:hover .slick-next
+{
+	opacity:1;
+	filter:alpha(opacity=100); 
+}
+.gallery-smalls
+{
+    padding: 10px 45px 0;
+}
+.slider-nav .slick-prev, .slider-nav .slick-next
+{
+    background: url(../images/control4.png) no-repeat left top;
+    border: none;
+    display: block !important;
+    top: 50%;
+    position: absolute;
+    margin-top: -12px;
+    overflow: hidden;
+    text-indent: -999em;
+    height: 24px;
+    width: 14px;
+}
+.slider-nav .slick-prev
+{
+    left: -20px;
+}
+.slider-nav .slick-next
+{
+    right: -20px;
+}
+.gallery-small
+{
+    padding: 0 15px;
+}
+.gallery-slider .slick-prev
+{
+    background-position: left top;
+}
+.gallery-slider .slick-prev:hover
+{
+    background-position: left bottom;
+}
+.gallery-slider .slick-next
+{
+    background-position: right top;
+}
+.gallery-slider .slick-next:hover
+{
+    background-position: right bottom;
+}
+.gallery-small .small-box
+{
+    border: solid 1px #d0d0d0;
+    width: 100%;
+}
+.slick-current .gallery-small .small-box, .gallery-small .small-box:hover
+{
+    border-color: #000;
+}
+/*=======================*/
+.slider-pager .slider-btn
+{
+    height: 20px;
+    width: 20px;
+}
+.slider-pager
+{
+    overflow: hidden;
+    left: 55px;
+    bottom: -10px;
+    position: relative;
+    width: 45px;
+}
+.slider-btn
+{
+    background: url(../images/controls2.png) no-repeat left top;
+    border: none;
+    overflow: hidden;
+    text-indent: -9999em;
+}
+.slick-prev 
+{
+    background-position: left top;
+    float: left;
+}
+.slick-next
+{
+    background-position: right top;
+    float: right;
+}
+.slick-prev:hover
+{
+    background-position: left bottom;
+}
+.slick-next:hover
+{
+    background-position: right bottom;
+}

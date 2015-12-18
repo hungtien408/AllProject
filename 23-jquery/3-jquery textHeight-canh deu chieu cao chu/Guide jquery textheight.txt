@@ -1,0 +1,30 @@
+- khai bao jquery
+- chep doan nay vao
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('.row-service').textHeight({
+                activetit: true,
+                listcss: [{ cssname: ".title-sui"}, { cssname: ".product-name" }],
+                wpointb: false,
+                widthpont: 420,
+                desbool: true,
+                listpos: [{ cssnamepos: ".description", cssheightnum: "3"}],
+                max: true
+            });
+        });
+    </script>
+
++ listcss: class cha cua class con lap ma muon canh chieu cao, co the them class khac nua
+	VD:  <div class="row-service">
+            		<div class="col-box"></div>
+            		<div class="col-box"></div>
+            		<div class="col-box"></div>
+	       </div>
+thi khai bao listcss: [{ cssname: ".row-service"}],
+
++ wpointb: web co responsive thi de true con ko thi de false
+
++ desbool: neu canh class khac tang chieu cao thi bat true, nguoc lai false
+
++ listpos: ten class ma ban mun canh height theo, cssnamepos: ten class, cssheightnum: so dong mun canh

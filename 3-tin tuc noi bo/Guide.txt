@@ -1,0 +1,18 @@
+- web.config: chep rewrite 6, rewrite 7 neu chua co
+- chep 3 trang: tin-tuc-noi-bo.aspx, tt-noi-bo-chi-tiet.aspx, tt-noi-bo-danh-muc.aspx
+- Trong thu muc data: chay file localacticlesql neu chua co tt, chay local_article-cu.sql neu da co roi
+- Trong thu muc css: chep hinh va css
+- Trong thu muc Bin: chep file TTLib.dll
+- Trong thu muc App-Code: chep de tat ca cac file
+- Chep thu muc ad-new, Uploadstt vao web phan use
+- Nho khai bao 2 file css trong site.master
+
+<link href="assets/styles/pager.css" rel="stylesheet" type="text/css" />
+<link href="assets/styles/tt.css" rel="stylesheet" type="text/css" />
+
+- Bo the <a> o duoi the <div id="footer"></div>
+- chep file site.master va site.master.cs ra 2 file nua de trong cung thu muc va doi ten file do la sitett.master va sitett.master.cs
+- Nho kiem tra coi chay file database chua
+
+<a href="tin-tuc-noi-bo.aspx" class="tt-img">
+                    <img src="assets/images/tt.png"></a>

@@ -1,0 +1,152 @@
+﻿body
+{
+}
+div.ttnbchitiet
+{
+    padding: 10px;
+   
+    background-color: #fff;
+    margin: 10px 10px 20px 10px;
+  
+    text-align: justify;
+    behavior: url(PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */ /*background: url(assets/images/bg1.jpg) top left no-repeat, url(assets/images/bg2.jpg) bottom left no-repeat, url(assets/images/bg3.jpg) bottom right no-repeat;*/
+    line-height: 18px;
+    font-size: 13px;
+}
+div.ttnbchitiet a
+{
+    color: #006BA2;
+}
+div.ttnbchitiet img
+{
+    max-width: 440px;
+}
+
+h3.ttnbchitiet
+{
+    color: #E5342F;
+    font-size: 18px;
+    font-family: Times New Roman;
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+h3.ttnbchitiet a
+{
+    text-decoration:none;
+    color: #E5342F;
+}
+ul.tintucnoibo
+{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+ul.tintucnoibo li
+{
+    text-decoration:none;
+    list-style:none;
+}
+ul.tintucnoibo li a
+{
+    text-decoration:none;
+    color: #000000;
+    font-family: Arial;
+      margin:5px 0 10px 10px;
+    padding-left: 10px;
+    background: url("../images/arrow-category.jpg") no-repeat left 4px scroll transparent;
+}
+h3.tintucnoibo
+{
+ padding-left: 10px;
+     margin-bottom:10px;
+}
+h3.tintucnoibo a
+{
+    color: #E5342F;
+    font-size: 18px;
+    padding-left: 5px;
+   
+    font-weight: bold;
+    font-family: Times New Roman;
+    text-decoration:none;
+}
+h3.ttnbchitiet a:hover
+{
+  
+      color: #006BA2;
+      text-decoration:none;
+}
+ul.more-article
+{
+    margin-top: 10px; /*margin-left: 40px;*/
+    margin-bottom: 5px;
+    list-style: none;
+margin-left:25px;
+}
+
+ul.more-article li
+{
+    padding: 3px;
+}
+
+ul.more-article li a
+{
+    text-decoration: none;
+    color: #005fac;
+    font-size: 13px;
+    padding-left: 20px;
+    background: url("../images/arrow-category.jpg") no-repeat left 4px scroll transparent;
+}
+
+ul.more-article li a:hover
+{
+    color: #ff7f00;
+}
+
+ul.more-article li span.date
+{
+    color: #646464;
+}
+.tt-img 
+{
+    position: relative;
+left: 50%;
+}
+
+div.sitemap
+{
+    font-size: 10px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-bottom-color: #cfcfcf;
+   
+}
+div.sitemap a
+{
+    font-size: 10px;
+    text-decoration:none;
+    color:#006BA2;
+}
+div.sitemap a span
+{
+    color: #006BA2;
+}
+.sitemap a:hover
+{
+    text-decoration:underline;
+}
+ul.dichvu li a
+{
+    text-decoration: none;
+    color: #CFCFCF;
+    font-family: Arial;
+    margin: 5px 0 5px 10px;
+    padding-left: 10px;
+    background: url("../images/a-icon.gif") no-repeat left 4px scroll transparent;
+}
+.left
+{
+float:left;
+}

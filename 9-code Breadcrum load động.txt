@@ -1,0 +1,38 @@
+//Trang san pham
+<asp:ListView ID="lstBreadcrum" runat="server" DataSourceID="odsBreadcrum" EnableModelValidation="True">
+            <ItemTemplate>
+                <%# Container.DataItemIndex == ((System.Data.DataView)odsBreadcrum.Select()).Count - 1 ? "<span>" + Eval("ProductCategoryName") + "</span>" : "<a href='" + progressTitle(Eval("ProductCategoryName")) + "-pc-" + Eval("ProductCategoryID") + ".aspx" + "'>" + Eval("ProductCategoryName") + "</a>  &raquo; "%>
+            </ItemTemplate>
+            <LayoutTemplate>
+                <div id="site">
+                    <a href="~/" runat="server">Trang chu</a> &raquo; <span runat="server" id="itemPlaceholder" />
+                </div>
+            </LayoutTemplate>
+        </asp:ListView>
+        <asp:ObjectDataSource ID="odsBreadcrum" runat="server" SelectMethod="ProductCategoryHierarchyToTopSelectAll"
+            TypeName="TLLib.ProductCategory">
+            <SelectParameters>
+                <asp:QueryStringParameter Name="CurrentProductCategoryID" QueryStringField="pci"
+                    Type="String" />
+            </SelectParameters>
+        </asp:ObjectDataSource>
+
+//Trang san pham chi tiet
+<div id="site">
+            <asp:ListView ID="lstBreadcrum" runat="server" DataSourceID="odsBreadcrum" EnableModelValidation="True">
+                <ItemTemplate>
+                    <%# "<a href='" + progressTitle(Eval("ProductCategoryName")) + "-pc-" + Eval("ProductCategoryID") + ".aspx" + "'>" + Eval("ProductCategoryName") + "</a> &raquo; "%>
+                </ItemTemplate>
+                <LayoutTemplate>
+                    <a href="~/" runat="server">Trang chu</a> &raquo; <span runat="server" id="itemPlaceholder" />
+                </LayoutTemplate>
+            </asp:ListView>
+            <asp:ObjectDataSource ID="odsBreadcrum" runat="server" SelectMethod="ProductCategoryHierarchyToTopSelectAll"
+                TypeName="TLLib.ProductCategory">
+                <SelectParameters>
+                    <asp:QueryStringParameter Name="CurrentProductCategoryID" QueryStringField="pci"
+                        Type="String" />
+                </SelectParameters>
+            </asp:ObjectDataSource>
+            <asp:Label ID="lblProductTitle" runat="server"></asp:Label>
+        </div>

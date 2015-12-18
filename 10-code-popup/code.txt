@@ -1,0 +1,44 @@
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<%-- Pop up --%>
+    <link href="assets/styles/PopUp.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function PopUp(msg) {
+            var wh = $(window).height();
+            var wt = $(window).scrollTop();
+
+            $('#popup').stop().remove();
+
+            $('body').append("<div id='popup'><div id='closeUp'></div>" + msg + "</div>");
+            $('#popup').width(400);
+            var $pop = $('#popup');
+
+            $pop.css({
+                'position': 'fixed',
+                'left': ($(window).width() - $pop.innerWidth()) / 2,
+                'top': ($(window).height() - $pop.innerHeight()) / 2,
+                'background-color': '#005FAC',
+                'color': '#fff',
+                'font-size': '14px',
+                'line-height': '18px',
+                'line': '14px',
+                'z-index': '9999',
+                'padding': '30px',
+                'border-radius': '5px',
+                'border': '1px solid #005AAB'
+            }).fadeTo('fast', 1.0);
+
+            $('#popup').find("#closeUp").click(function () {
+                $(this).parent("#popup").fadeOut();
+            });
+        }
+    </script>
+
+
+<asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </asp:ToolkitScriptManager>
+
+
+*--- Code Behind ---*/
+
+ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "runtime", "PopUp('vui long nhap lai.')", true);

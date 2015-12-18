@@ -1,0 +1,10 @@
+﻿#closeUp
+{
+    background: url(../images/closeX.png) no-repeat right center;
+    cursor: pointer;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+}

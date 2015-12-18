@@ -1,0 +1,75 @@
+﻿		-------- __@      __@       __@        __@      __~@
+		----- _`\&lt;  _`\&lt;,_  _`\&lt;,_  _`\&lt;   _`\&lt;
+		---- (*)/ (*)  (*)/ (*)  (*)/ (*)   (*)/ (*)  (*)/ (*)
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+###### chú ý:
+1 thường dính lỗi do UpdatePanel bỏ wa lỗi
+2 thường khai báo dư trường trong file app_code
+3 còn....
+###### end.!
+
+
+	1 chep App_code (khai báo nhung thu can lay)
+
+	2 chep uc shopingcart
+
+	3 site.master (khai bao úc uc/shopping-cart.aspx)
+
+- them muc ToolkitScriptManager1 tren <wrapper>
+
+- <uc1:shopping ID="shopping1" runat="server" /> vào nơi cần hiện
+ 
+	4 trag chi-tiet-san-pham.aspx
+
+chep:  
+
+ <asp:FormView ID="FormView2" DataSourceID="ObjectDataSource1" Width="100%" runat="server"
+        EnableModelValidation="True">
+        <ItemTemplate>
+
+	    <input id="hdnPrice" type="hidden" runat="server" class="hdnPrice" value='<%# Eval("Price") %>' />
+            <input id="hdnSavePrice" type="hidden" runat="server" class="hdnSavePrice" value='<%# Eval("SavePrice") %>' />
+            <asp:HiddenField ID="hdnIsSaleOff" runat="server" Value='<%# Eval("IsSaleOff") %>' />
+            <asp:HiddenField ID="hdnProductID" Value='<%# Eval("ProductID") %>' runat="server" />
+            <asp:HiddenField ID="hdnImageName" Value='<%# Eval("ImageName") %>' runat="server" />
+
+<p class="more-buy">
+<asp:LinkButton ID="lnkbtnShoppingCart" runat="server" OnClick="lnkbtnShoppingCart_Click">Mua hàng</asp:LinkButton>
+</p>
+ </ItemTemplate>
+    </asp:FormView>
+
+
+
+- trag chi-tiet-san-pham.aspx.cs
+
+protected void lnkbtnShoppingCart_Click(object sender, EventArgs e)
+    {
+        var lblProductName = FormView2.FindControl("lblProductName") as Label;
+        var ProductName = lblProductName.Text;
+        ShoppingCart();
+        ScriptManager.RegisterClientScriptBlock((LinkButton)sender, sender.GetType(), "runtime", "alert('" + "Sản phẩm " + ProductName + " đã được thêm vào giỏ hàng" + "')", true);
+    }
+    public void ShoppingCart()
+    {
+        var lblProductName = FormView2.FindControl("lblProductName") as Label;
+        var hdnPrice = FormView2.FindControl("hdnPrice") as HtmlInputHidden;
+        var hdnSavePrice = FormView2.FindControl("hdnSavePrice") as HtmlInputHidden;
+        var hdnImageName = FormView2.FindControl("hdnImageName") as HiddenField;
+        var hdnProductID = FormView2.FindControl("hdnProductID") as HiddenField;
+        var ProductID = hdnProductID.Value;
+        var ImageName = hdnImageName.Value;
+        var ProductName = lblProductName.Text;
+        var Price = string.IsNullOrEmpty(hdnPrice.Value) ? "0" : hdnPrice.Value;
+        var oShoppingCart = new ShoppingCart();
+        oShoppingCart.CreateCart(ProductID, ImageName, ProductName, Price);
+    }
+
+	5  chep trag gio-hang.aspx & file number-only.js
+
+	6  chep file shopping-cart.css
+
+	7  chep trag thanh-toan.aspx & file contact-shoping.css
+
+

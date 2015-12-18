@@ -1,0 +1,3 @@
+- Chep folder fonts vao folder assets
+- Chep font-awesome.min.css vao folder styles
+- Vao trang https://fortawesome.github.io/Font-Awesome/icons/ xem icon nao mun lay click phai xem phan tu coi la class gi roi bo class do vao tag can dung

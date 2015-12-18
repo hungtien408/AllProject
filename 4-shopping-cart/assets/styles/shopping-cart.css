@@ -1,0 +1,215 @@
+﻿
+
+/*====box-header===*/
+#header .box-header
+{
+    right: 0;
+    top: 5px;
+    position: absolute;
+    width: 580px;
+}
+#header .box-buy
+{
+    background: url(../images/buy-card.png) no-repeat 10px center;
+    border-left: solid 1px #e5e5e5;
+    display: block;
+    float: left;
+    padding: 5px 0 10px 56px;
+    width: 128px;
+}
+#header .box-header a:hover
+{
+    text-decoration: none;
+}
+#header .box-buy .div-shopping
+{
+    color: #737272;
+    display: block;
+    float: left;
+    font-size: 10px;
+    padding: 0 9px 0 4px;
+    width: 115px;
+}
+#header .box-buy .buy-1
+{
+    border-bottom: solid 1px #99958b;
+    color: #7d7d7d;
+    font-size: 14px;
+}
+#header .buy-1 strong, #header .buy-2 strong
+{
+    color: #000;
+    font-size: 24px;
+    font-weight: normal;
+}
+#header .buy-2 .title-shopping-cart
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+ .more-buy
+{
+    float: left;
+    padding: 2px 0 40px;
+    width: 100%;
+}
+
+ .more-buy a
+{
+    background: url(../images/buy-bg.png) no-repeat left top;
+    display: block;
+    float: left;
+    height: 38px;
+    text-indent: -9999em;
+    width: 131px;
+}
+
+
+/*-------------- shopping-cart ---------------*/
+.box-shopping-cart
+{
+    margin: 15px 0;
+}
+.shopping-cart
+{
+    /*border-collapse: collapse; border: 3px solid #cfcfcf;*/
+    font-size: 11px; /*width:100%;*/
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #fff; /*width: 534px; height: 150px;padding: 10px;*/
+    border: 1px solid #ccc;
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari and Chrome */
+    border-radius: 10px; /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS3 */
+    -moz-box-shadow: 2px 2px 3px #ddd; /* Firefox */
+    -webkit-box-shadow: 2px 2px 3px #ddd; /* Safari and Chrome */
+    box-shadow: 2px 2px 3px #ddd; /* Opera 10.5+, future browsers and IE6+ using IE-CSS3 */
+    behavior: url(PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */ /*background: url(assets/images/bg1.jpg) top left no-repeat, url(assets/images/bg2.jpg) bottom left no-repeat, url(assets/images/bg3.jpg) bottom right no-repeat;*/
+}
+.shopping-cart th
+{
+    padding: 8px 5px;
+    text-align: center;
+    border-collapse: collapse; /*border-bottom: 1px solid #cfcfcf;*/
+    border-right: 1px solid #fff;
+    background-color: #A9A9A9;
+    color: #fff;
+}
+.shopping-cart th.delete
+{
+    border-right: none;
+}
+.shopping-cart td
+{
+    padding: 5px; /*border-collapse: collapse;     border: 1px solid #555;    */
+}
+
+.img-shopping-cart
+{
+    width: 80px;
+    height: 80px;
+}
+.img-shopping-cart img
+{
+    max-width: 80px;
+    max-height: 80px;
+    border: 1px solid #cfcfcf;
+}
+.bg-button-shopping-cart
+{
+    /*background-color: #F2F2F2;border-bottom:3px solid #cfcfcf;     border-left:3px solid #cfcfcf;     border-right:3px solid #cfcfcf;*/
+    padding: 10px;
+    margin: 0 10px;
+}
+.bg-btn-check-out
+{
+    background-color: #852b16;
+    height: 21px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    border: none;
+    padding: 1px 10px;
+    cursor: pointer;
+    position: relative;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    behavior: url(PIE.htc);
+    vertical-align: middle;
+}
+a.bg-btn-check-out
+{
+    padding: 3px 10px;
+    color: #fff;
+    font-size: 12px;
+}
+.text-total-price
+{
+    font-size: 12px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.total-price
+{
+    color: Red;
+}
+.btn-update-shopping-cart
+{
+    background-position: left center;
+    background-image: url('../images/bg_btn-1.gif');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    border: 0 none;
+    width: 78px;
+    height: 18px;
+    color: #fff;
+    font-size: 11px;
+    cursor: pointer;
+}
+.btn-buying a
+{
+    background-position: left center;
+    background-image: url('../images/bg-button-register.jpg');
+    background-repeat: repeat-x;
+    background-attachment: scroll; /*padding: 10px; width: 78px;*/
+    padding: 2px 10px;
+    height: 18px;
+    color: #fff;
+    font-size: 11px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.btn-buying a:hover
+{
+    text-decoration: none;
+}
+.note
+{
+    color: #6f6f6f;
+    padding: 0 20px;
+}
+.note a
+{
+    color: #f36523;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: bold;
+}
+.note a:hover
+{
+    text-decoration: none;
+}
+.txtdathang
+{
+    width: 55px;
+    text-align: center;
+    height: 15px;
+    font-size: 11px;
+}
+.lblproductname-color
+{
+    color: #DD0063;
+    font-weight: bold;
+}

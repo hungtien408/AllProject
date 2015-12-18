@@ -1,0 +1,54 @@
+﻿.pager
+{
+    
+    background: url(../images/news-line.png) repeat-x left 27px;
+    clear: both;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+    width: 683px;
+}
+.pager a
+{
+   
+    background-color: #f7f7f7;
+    border: solid 1px #dadada;
+    color: #6e6e6e;
+    display: inline-block;
+    line-height: 16px;
+    font-size: 11px;
+    padding: 2px 6px;
+    margin-left: -4px;
+}
+.pager a:hover
+{
+    background-color: #f6a229;
+    border: solid 1px #f6a229;
+    color: #fff;
+    text-decoration: none;
+}
+.numer-paging
+{
+    background-color: #f6a229;
+    border: solid 1px #f6a229;
+    color: #fff;
+    text-decoration: none;
+}
+.current-page
+{
+    background-color: #f6a229;
+    border: solid 1px #f6a229;
+    color: #fff;
+    text-decoration: none;
+     display: inline-block;
+    font-size: 11px;
+    line-height: 16px;
+    margin-left: -4px;
+    padding: 2px 6px;
+}
+.next-prev-paging
+{
+   font-size: 13px;
+    line-height: 16px;
+    padding: 1px 6px 3px;
+}

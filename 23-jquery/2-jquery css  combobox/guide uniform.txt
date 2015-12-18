@@ -1,0 +1,8 @@
+- Chep don ben duoi vao site.master, khai bao js, css 
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('.selectb').uniform();
+        });
+    </script>
+
+- Mo file uniform-base.css format width, height

@@ -1,0 +1,29 @@
+//Code Behind -- Bo ngoai the IsPageLoad
+
+
+string visitors = Application["TatCa"].ToString();
+        string html = "";
+        foreach (char c in visitors)
+        {
+            if (c.Equals('0'))
+                html += "<img class='vam' src='assets/images/visitor/i0.png' />";
+            else if (c.Equals('1'))
+                html += "<img class='vam' src='assets/images/visitor/i1.png' />";
+            else if (c.Equals('2'))
+                html += "<img class='vam' src='assets/images/visitor/i2.png' />";
+            else if (c.Equals('3'))
+                html += "<img class='vam' src='assets/images/visitor/i3.png' />";
+            else if (c.Equals('4'))
+                html += "<img class='vam' src='assets/images/visitor/i4.png' />";
+            else if (c.Equals('5'))
+                html += "<img class='vam' src='assets/images/visitor/i5.png' />";
+            else if (c.Equals('6'))
+                html += "<img class='vam' src='assets/images/visitor/i6.png' />";
+            else if (c.Equals('7'))
+                html += "<img class='vam' src='assets/images/visitor/i7.png' />";
+            else if (c.Equals('8'))
+                html += "<img class='vam' src='assets/images/visitor/i8.png' />";
+            else if (c.Equals('9'))
+                html += "<img class='vam' src='assets/images/visitor/i9.png' />";
+        }
+        visit.InnerHtml = html;
